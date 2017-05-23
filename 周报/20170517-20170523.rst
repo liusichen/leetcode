@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 本周周报
 =====
@@ -16,6 +15,6 @@
    + 在Job结束时添加失败ip状态及对应的ip list
    + 测试结果如下
       |test|
-.. |test| image:: https://help.github.com/assets/images/site/favicon.ico 
+.. |test| image:: ./123.png
 - 修改了urlfailed的上报bug
 - 对第六章进行了学习，对purge中utils中的NewSafeMap等有了更深的了解
