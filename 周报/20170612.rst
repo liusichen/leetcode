@@ -1,0 +1,32 @@
+
+
+.. Contents :: 目录
+
+你好
+
+今日工作如下！
+
+- go-purge-api 上线
+
+::
+
+    针对周末出现文档与代码逻辑不一致的进行修改上线
+
+- agent代码的阅读(cron)
+
+  + Heartbeat
+
+    :: 
+
+        流程是拉job，获取agent，起协程执行工作，释放资源，释放agent，睡5s再工作
+        其中核心有拉Job和执行
+        执行Job的方法根据类型不同，执行的方式不同，
+        现有的有下载任务、rpm、shell、symlink、updateConstant等。
+        
+  + 疑问:
+
+    ::
+
+        有个疑问就是在102行再执行defer，如果在之前err报错，会不会没有关闭filepath？
+
+

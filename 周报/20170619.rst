@@ -1,0 +1,19 @@
+
+
+.. Contents :: 目录
+
+你好
+
+今日工作如下！
+
+- go-purge-api 考虑添加版本
+
+  + 思路是添加一个脚本，让执行脚本，明天问岩哥
+
+
+- fast/cli 测试用例编写及修改 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/cli/commit/2632764bcb7b962b4aa1eb128d4da5c1d06050d4>`_
+
+  + 添加了测试用例，覆盖达到65%
+
+  + 修改了代码架构，便于描写测试代码
+

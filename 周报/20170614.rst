@@ -1,0 +1,30 @@
+
+
+.. Contents :: 目录
+
+你好
+
+今日工作如下！
+
+- go-purge-api 代码修改及bug修改
+
+  + g:fix a json data read bug Gerrit11812(http://sys.qiyi.domain/gerrit/#/c/11812/)
+    
+    某个slice字段的json格式未添加导致的json格式解析失败，出现空
+
+  + purge:fix a success rate calculate bug Gerrit11813(http://sys.qiyi.domain/gerrit/#/c/11813/)
+
+    整型除法得到结果为0
+    修改为float运算之后再转回int
+
+  + purge:fix the ip order and http:check user provide ips Gerrit11814(http://sys.qiyi.domain/gerrit/#/c/11814/)
+
+    修改之前的ippurge顺序不对的bug
+    监测用户输入ip是否在对应Map中
+    为了监测添加了两个公有的SNToIPsMap 和IPToSNMap
+
+  + service:fix mongo "Close explictly" bug when mongo restart Gerrit11816(http://sys.qiyi.domain/gerrit/#/c/11816/)
+
+    添加了session Copy来获取每次会话
+
+

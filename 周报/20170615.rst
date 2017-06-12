@@ -1,0 +1,32 @@
+
+
+.. Contents :: 目录
+
+你好
+
+今日工作如下！
+
+- go-purge-api 代码修改及bug修改
+
+  + docs：change every .md to .rst and make the index.rst to adapt `Gerrit11834 <http://sys.qiyi.domain/gerrit/#/c/11834/>`_
+    
+    将markdown修改为rst文件
+    修改index文件来修改目录
+
+  + http:add two APIs to checkout CNAME or Service IPs list `Gerrit11847 <http://sys.qiyi.domain/gerrit/#/c/11847/>`_
+
+    1.cname usage
+    ::
+        
+        http://${host:port}/get_cname_ip
+   
+    #.service usage:
+    ::
+        
+        http://${host:port}/get_service_ip
+
+    #.修改了ansible的细节错误
+
+
+  + 在10.153.3.171上上线测试
+

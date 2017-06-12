@@ -1,0 +1,39 @@
+周报
+''''
+
+
+.. Contents :: 目录
+
+::
+
+    你好
+    本周工作如下！
+
+
+Fast
+````
+- cli
+
+   + 提示用户信息完善
+   + 修改代码的顺序，保持结构与函数执行一致
+   + 编写了文档，对工具说明有详细的说明
+   
+- agent阅读
+  
+      + 整个agent的逻辑关键在于cron库中
+      + g库提供了一些全局使用的状态调用、改变什么的，其中desire.go文件对desire的处理函数比较关键
+      + cron库
+            - heartbeat拉任务，解析任务，执行任务，上报结果
+            - collector对desire文件app及config的更新
+            - plugins包括监听plugins工作及调用plugin库对插件进行的操作列举list，有改动的删除，然后再下载util库中仅仅包括了shell命令执行及postserver工作
+      + plugin库便是对插件的一些操作函数
+      + http库则提供了一些接口:health,service等
+
+
+go-purge-api 线上修改
+`````
+
+::
+
+    针对周末出现文档与代码逻辑不一致的进行修改上线
+

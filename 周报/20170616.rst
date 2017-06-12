@@ -1,0 +1,22 @@
+
+
+.. Contents :: 目录
+
+你好
+
+今日工作如下！
+
+- go-purge-api 代码修改及bug修改
+
+  + utils:build nignx url need to add '/' end the url `Gerrit11871 <http://sys.qiyi.domain/gerrit/#/c/11871/>`_
+
+    #.修改了url处理过程中Path最后一个"/"丢弃
+
+  + 在10.153.3.171上上线测试
+
+- fast/cli 测试用例编写及修改
+
+  + 添加mock.go，来模拟服务器，回应简单的数据
+
+  + 添加了部分测试用例
+
