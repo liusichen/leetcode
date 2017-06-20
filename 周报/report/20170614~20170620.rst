@@ -1,0 +1,39 @@
+周报
+''''
+
+
+.. Contents :: 目录
+
+
+
+你好
+我本周的工作如下
+
+go-purge-api 线上修改
+`````
+
+- 文档修改
+
+  + docs：change every .md to .rst and make the index.rst to adapt `Gerrit11834 <http://sys.qiyi.domain/gerrit/#/c/11834/>`_
+  
+    ::
+
+    将markdown修改为rst文件
+    修改index文件来修改目录
+
+
+- 修改了ansible的细节错误
+
+- 增加了小的需求，及修复一些小bug
+
+
+fast/cli
+``````
+
+- 测试代码的编写
+
+  + 增添测试代码,覆盖率为65% `gitlab <http://gitlab.qiyi.domain/fast/cli/commit/2632764bcb7b962b4aa1eb128d4da5c1d06050d4>`_
+     
+  + 增加了覆盖的显示
+
+  + 修改了代码的结构，来适应测试编写
