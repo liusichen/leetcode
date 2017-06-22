@@ -1,0 +1,33 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码阅读
+--------------------
+
+- 流程图编写
+
+  .. image:: https://www.processon.com/view/link/595b66f4e4b0c2773f849990 
+  
+
+- 任务完成
+
+  + common添加auto untar字段，用来控制下载文件是否自动解压缩 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/common/commit/f3934cd4d8a7feeba8a9831c90fae52bacffb955>`_
+
+  + server添加一个job状态重置接口  `gitlab2 <http://gitlab.qiyi.domain/liusichen_sx/server/commit/5e267a5b0a9537c90a451c5bfba14b57cebdd78b>`_
+  
+
+学习
+-----
+
+- 数据库学习
+
+  ::
+
+      对查询的基础关键字进行学习，并学习表的结合查询
+
+- go语言圣经代码复习
+
+  ::
+
+      对第一章代码进行复习，重点看某些关键函数的实现过程，如ioutil，os库中的实现过程

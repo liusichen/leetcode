@@ -1,0 +1,20 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码阅读
+--------------------
+
+- 代码阅读量 （2063行，全部的http包的代码）
+
+  + http接口方法封装
+  + 方法调用服务函数，为client和web提供接口(想用流程图显示)
+
+- 发现冗余代码等
+
+  + collector接口发现重复代码并修改 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/server/commit/394071114fb63722b7dcb7b032ced8a5e36aa81b>`_
+  
+- 流程图编写
+
+  .. image:: /Users/liusichen/Documents/爱奇艺/fast项目/Ubuntu1404.png
+

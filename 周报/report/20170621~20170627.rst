@@ -1,0 +1,45 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码阅读
+--------------------
+
+- 代码阅读量 （3660行，全部的service包的代码）
+
+  + 核心
+  
+  :: 
+
+    这里主要进行server做的一些服务，除了service.go,portal.go,cache.go以外
+    大部分文件主要描述的是数据库的增删改查
+
+  
+  1. service.go 的文件主要就是起RDBM，mongo，初始化portal(portal.go)，创建redis缓存，更新常量数据（app，desire）
+  #. portal.go 的文件初始化portal，其核心就是初始化四个map，ServiceInfoMap，BoxInfoMap，IdcSnsMap，VidcSNsMap
+  #. cache.go 的文件中任务创建（将sn对应的TaskIDs和TaskID对应的Job任务树存入cache），获取任务（taskID与JobID一一对应），清空失败工作任务（一个job失败，删除所有对应的task的Job树）为核心。
+
+  + 其它增删改查
+
+  ::
+
+    这里是数据库的操作，是需要学习的一项知识，这里主要用的engine的库，也是要学习的另一个点
+
+go-purge-api 
+------------
+
+- 在Job结构中增加了client_addr字段（3行代码）
+
+  ::
+
+    为了满足查询job状态时能看见purge任务的ip源
+
+mysql学习
+----------
+
+- 安装mysql
+- 基础的语法学习
+
+  + select 选择，insert into 插入（一行，或者某些列），创建数据库，创建表，创建主键什么的，删除，更新
+  + 实际创建表实验了一下表
+  + 比对server代码更好的理解了代码表达的意思

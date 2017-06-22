@@ -1,0 +1,17 @@
+你好
+
+我本周工作如下！
+
+fast
+--------------------
+
+- 对于sn查询增加SN查询纬度 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/server/commit/bd72d4553b9e4138c85c3613096ab8124534a14c>`_
+
+- 给tasktemplate创建、获取添加添加service字段
+
+  + 首先创建task template, 获取task template id
+  + 然后是获取相应service字段的service id（从portal service表中）
+  + 通过task template id 和service ID 制作联表
+  + 在查询的时候，则是通过联表查询获取完整的信息
+
+- 修改了测试用例，来适应传给server的接口

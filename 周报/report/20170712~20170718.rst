@@ -1,0 +1,36 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码阅读
+--------------------
+
+- 添加接口来更新job状态 `gitlab <http://gitlab.qiyi.domain/fast/server/commit/2c4928a755725cdfeb5291e0346211630fab04f4>`_
+
+  + 获取参数SNs
+  + 添加要更新的数据
+  + 调用UpdateJobByFilte函数
+
+- 根据sn,idc,vidc获取资产信息 `gitlab1 <http://gitlab.qiyi.domain/fast/server/commit/3690cf27df7213afe3575f979e13d387a18f458e>`_
+
+- 增加了/asserts/sns的测试代码及测试用例 `gitlab2 <http://gitlab.qiyi.domain/fast/server/commit/660c0409ccde3f64905c7830c700cc1c4b9e9b8f>`_
+
+- 编写server接口文档 `gitlab3 <http://gitlab.qiyi.domain/fast/doc/commit/01d5f1caca8a7e91cf890e3b90b9fad870ae4af7#49f338c900a9c549e00adfa0d5a440319bad07f8>`_
+  
+  + GET /api/v1/consts
+  + GET /api/v1/consts/categories
+  + GET /api/v1/consts/descriptions
+  + GET /api/v1/consts/job_status_descriptions
+  + GET /api/v1/consts/task_status_descriptions
+  + GET /api/v1/base_jobs/:base_job_id
+  + GET /api/v1/job_templates
+  + POST /api/v1/job_templates
+  + GET /api/v1/job_templates/:template_id
+  + GET /api/v1/jobs
+  + GET /api/v1/jobs/:job_id
+  + GET /api/v1/jobs/:job_id/outputs
+  + GET /api/v1/task_templates
+  + POST /api/v1/task_templates
+  + GET /api/v1/task_templates/:template_id
+  + GET /api/v1/task_templates/:template_id/inputs
+  + GET /api/v1/task_templates/:template_id/topology

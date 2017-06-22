@@ -1,0 +1,27 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码函数拆分
+------------------------
+
+- 拆分复杂度过高的函数 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/server/commit/8c579775c9a840f820e7a5d3bca88ae738fc58ac>`_
+
+    + http/collector.go depart handling failed jobs from SaveJobResultHandler
+    + http/os_vesion.go depart sns geting from getOsVersionDistributionHandler
+    + http/asset_test.go depart getURL from TestFetchSNsHandler
+    + http/asset_test.go depart getURL from TestFetchSNsWithStatus
+    + http/asset_test.go depart getPCS from TestFetchSNsHandler
+    + http/asset_test.go depart getPCWS from TestFetchSNsWithStatus
+    + service/task.go add nolint to SQL message
+
+前端知识学习
+------------
+
+- html和css
+
+  + 标签的学习（标题、文本、段、图片、链接、有序排列、无序排列、块、表单）
+  + 属性的学习（个人认为用style类来标示一般属性，特殊属性再展现出来，id属性的关键）
+  + style类的编写及使用
+  + script中用jQuery来获取某些块来修改属性（通过属性获取，通过id获取，通过标签名称获取）
+  + 学习使用link获取已经封装好的css属性
