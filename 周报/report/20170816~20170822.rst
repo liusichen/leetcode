@@ -1,0 +1,29 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码函数拆分
+------------------------
+
+- 查询接口维度优化 `gitlab<http://gitlab.qiyi.domain/fast/server/merge_requests/282>`_
+
+    + v1.GET("/collectors/os_version/distribution", getOsVersionDistributionHandler)
+  
+    + v1.GET("/collectors/app_config/distribution", getAppConfigDistributionHandler)
+
+    + v1.GET("/collectors/app_config/detail", getAppConfigDetailHandler)
+
+    + v1.GET("/collectors/app_status/distribution", getAppStatusDistributionHandler)
+
+    + v1.GET("/collectors/app_status/detail", getAppStatusDetailHandler)
+
+- 增加触发更新接口 `gitlab<http://gitlab.qiyi.domain/liusichen_sx/server/pipelines/63745>`_
+
+    + v1.GET("/portal/update", updatePortalHandler)
+
+    + v1.GET("/const/update", updateConstHandler)
+
+    + v1.GET("/app_config/update", updateAppConfigHandler)
+
+- 增加IPSNMap,SNIPsMap
+

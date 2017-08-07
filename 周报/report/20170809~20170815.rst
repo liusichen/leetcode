@@ -1,0 +1,33 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码函数拆分
+------------------------
+
+- service:task_template 增加了响应的字段
+
+- debug:增加virtual portal cache 给redius
+
+
+- 拆分复杂度过高的函数 `gitlab <http://gitlab.qiyi.domain/liusichen_sx/server/commit/8c579775c9a840f820e7a5d3bca88ae738fc58ac>`_
+
+  +  http/heartbeat.go depart pre-check from JobRender()
+  +  service/funcs.go depart pre-table-check from appConfigCheck()
+  +  http/collector.go depart job_result_failed_handler SaveJobResultHandler
+  +  service/task.go depart get_jobs from AddHostToTask
+
+go语言复习
+------------
+
+- string
+
+  + 复习了string相关的知识，对于string之间的比较，以及字符串slice之后的转换，进行一系列训练(相关代码400行)
+
+- slice
+
+  + 对于silce的有序性进行了相对的认识
+  + 对slice转换成map进行认识
+  + slice进行删除
+  + slice进行深度比较等
+  + 以及基于slice的一些简单算法，如动态规划

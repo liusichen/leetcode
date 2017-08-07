@@ -1,0 +1,30 @@
+你好
+
+我本周工作如下！
+
+fast/server 代码函数拆分
+------------------------
+
+- 增加几个接口 
+
+  + add ftp_package app name GET API `GitLab1 <http://gitlab.qiyi.domain/fast/server/commit/9cf475a63ac84830bfc7524eeeb8919195998aab>`_
+  + add task template and job template update API `GitLab2 <http://gitlab.qiyi.domain/fast/server/commit/a185f81ea2a913fa0e0155311b6167bc1c4c6435>`_
+
+前端知识学习
+------------
+
+- js
+
+  + 注释，声明变量，赋值（理解非初始化变量）
+  + 数学运算
+  + 字符串基本操作（split, join, replace, substr,toLowerCase,...）
+  + 数组基本操作(map,filter,sort,reverse,contact,reduce,)
+  
+go语言复习
+----------
+- slice传入函数地址
+
+  + tmp \*[]string 传入的是slice的地址
+  + tmp []\*string 传入的是地址的slice
+  + 若传入不是地址只是[]string，最终该[]string值不变
+  + map传入函数的就是地址
