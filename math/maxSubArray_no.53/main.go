@@ -1,9 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
 
 func main() {
-	a := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	input := bufio.NewScanner(os.Stdin)
+
+	split := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
+		advance, token, err = bufio.ScanWords(data, atEOF)
+		if err == nil && token != nil {
+			_, err = strconv.ParseInt(string(token), 10, 32)
+		}
+		return
+	}
+	a := []int{}
+	input.Split(split)
+	for input.Scan() {
+		num, _ := strconv.Atoi(input.Text())
+		a = append(a, num)
+	}
+
 	fmt.Println(maxSubArray(a))
 }
 
